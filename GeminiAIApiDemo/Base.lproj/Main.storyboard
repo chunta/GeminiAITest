@@ -17,9 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJK-19-M1k">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJK-19-M1k">
                                 <rect key="frame" x="20" y="59" width="353" height="281"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRS-eg-G1p">
+                                <rect key="frame" x="20" y="340" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-Bn-a0I">
                                 <rect key="frame" x="20" y="370" width="353" height="45"/>
                                 <constraints>
@@ -40,13 +46,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-Cu-Wq1">
                                 <rect key="frame" x="20" y="445" width="353" height="281.33333333333326"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg5-qA-UNa">
+                                <rect key="frame" x="20" y="726.33333333333337" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-YQ-HWC">
                                 <rect key="frame" x="24" y="756.33333333333337" width="353" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6C1-Ii-QBj"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="選一張自然站姿照片">
+                                <buttonConfiguration key="configuration" style="plain" title="選一張全身照片">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                         <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -67,6 +79,7 @@
                             <constraint firstItem="eFG-Cu-Wq1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Ip-iX-z0f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uJK-19-M1k" secondAttribute="trailing" constant="20" id="AJY-Rd-kl0"/>
                             <constraint firstItem="eFG-Cu-Wq1" firstAttribute="height" secondItem="uJK-19-M1k" secondAttribute="height" id="Aim-DW-o9d"/>
+                            <constraint firstItem="WRS-eg-G1p" firstAttribute="bottom" secondItem="uJK-19-M1k" secondAttribute="bottom" id="B0b-xA-168"/>
                             <constraint firstItem="eYN-YQ-HWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="DZR-KD-mbF"/>
                             <constraint firstItem="eFG-Cu-Wq1" firstAttribute="top" secondItem="g7s-Bn-a0I" secondAttribute="bottom" constant="30" id="Fae-wS-f2h"/>
                             <constraint firstItem="Dyo-hO-wqk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FdV-X0-bcZ"/>
@@ -76,17 +89,24 @@
                             <constraint firstItem="g7s-Bn-a0I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TXH-0P-DdG"/>
                             <constraint firstItem="uJK-19-M1k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vp7-t9-j4Q"/>
                             <constraint firstItem="g7s-Bn-a0I" firstAttribute="width" secondItem="uJK-19-M1k" secondAttribute="width" id="Wvu-qj-55y"/>
+                            <constraint firstItem="WRS-eg-G1p" firstAttribute="leading" secondItem="uJK-19-M1k" secondAttribute="leading" id="Y4P-v8-S7y"/>
                             <constraint firstItem="eYN-YQ-HWC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b7n-2f-Mg6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WRS-eg-G1p" secondAttribute="trailing" symbolic="YES" id="fXJ-iL-77P"/>
                             <constraint firstItem="eYN-YQ-HWC" firstAttribute="top" secondItem="eFG-Cu-Wq1" secondAttribute="bottom" constant="30" id="fuP-QR-Pkv"/>
                             <constraint firstItem="eFG-Cu-Wq1" firstAttribute="width" secondItem="uJK-19-M1k" secondAttribute="width" id="nRz-vC-JqQ"/>
+                            <constraint firstItem="qg5-qA-UNa" firstAttribute="leading" secondItem="eFG-Cu-Wq1" secondAttribute="leading" id="ngE-Zu-uJV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qg5-qA-UNa" secondAttribute="trailing" symbolic="YES" id="rdf-vG-NkB"/>
                             <constraint firstItem="uJK-19-M1k" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.33" id="wRG-5T-PiN"/>
+                            <constraint firstItem="qg5-qA-UNa" firstAttribute="bottom" secondItem="eFG-Cu-Wq1" secondAttribute="bottom" id="xxU-y1-FBd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="frontCleanFaceButton" destination="g7s-Bn-a0I" id="eUa-NV-nEF"/>
                         <outlet property="frontCleanFaceImageView" destination="uJK-19-M1k" id="MKN-I1-NJa"/>
-                        <outlet property="fullBodyNaturePostButton" destination="eYN-YQ-HWC" id="1bZ-7Q-yBn"/>
+                        <outlet property="frontCleanFaceVerifyLabel" destination="WRS-eg-G1p" id="at8-pc-mpA"/>
+                        <outlet property="fullBodyNaturePoseButton" destination="eYN-YQ-HWC" id="1bZ-7Q-yBn"/>
                         <outlet property="fullBodyNaturePostImageView" destination="eFG-Cu-Wq1" id="qXd-Ew-dml"/>
+                        <outlet property="fullbodyNaturePoseVerifyLabel" destination="qg5-qA-UNa" id="gMx-5U-LBd"/>
                         <outlet property="loadingActivity" destination="Dyo-hO-wqk" id="Apd-Jo-CaO"/>
                     </connections>
                 </viewController>
@@ -98,6 +118,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

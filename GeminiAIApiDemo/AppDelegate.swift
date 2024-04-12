@@ -1,14 +1,6 @@
-//
-//  AppDelegate.swift
-//  GeminiAIApiDemo
-//
-//  Created by Rex Chen on 2024/4/12.
-//
-
 import UIKit
 
 enum APIKey {
-  // Fetch the API key from `GenerativeAI-Info.plist`
   static var `default`: String {
     guard let filePath = Bundle.main.path(forResource: "GenerativeAI-Info", ofType: "plist")
     else {
@@ -49,6 +41,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
 }
-
