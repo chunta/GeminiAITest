@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GeminiAIApiDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uJK-19-M1k">
+                                <rect key="frame" x="20" y="59" width="353" height="281"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7s-Bn-a0I">
+                                <rect key="frame" x="20" y="370" width="353" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="k2P-Ld-zCg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="選一張正面素顏照片">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectFrontCleanFacePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xtu-0y-OJZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-Cu-Wq1">
+                                <rect key="frame" x="20" y="445" width="353" height="281.33333333333326"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-YQ-HWC">
+                                <rect key="frame" x="24" y="756.33333333333337" width="353" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="6C1-Ii-QBj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="選一張自然站姿照片">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="selectFullBodyNaturePostPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xcz-GV-0Mv"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Dyo-hO-wqk">
+                                <rect key="frame" x="178" y="420" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eFG-Cu-Wq1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2Ip-iX-z0f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uJK-19-M1k" secondAttribute="trailing" constant="20" id="AJY-Rd-kl0"/>
+                            <constraint firstItem="eFG-Cu-Wq1" firstAttribute="height" secondItem="uJK-19-M1k" secondAttribute="height" id="Aim-DW-o9d"/>
+                            <constraint firstItem="eYN-YQ-HWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="DZR-KD-mbF"/>
+                            <constraint firstItem="eFG-Cu-Wq1" firstAttribute="top" secondItem="g7s-Bn-a0I" secondAttribute="bottom" constant="30" id="Fae-wS-f2h"/>
+                            <constraint firstItem="Dyo-hO-wqk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FdV-X0-bcZ"/>
+                            <constraint firstItem="uJK-19-M1k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gec-rd-jh3"/>
+                            <constraint firstItem="g7s-Bn-a0I" firstAttribute="top" secondItem="uJK-19-M1k" secondAttribute="bottom" constant="30" id="ReO-wC-uoU"/>
+                            <constraint firstItem="Dyo-hO-wqk" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="S35-SZ-uoa"/>
+                            <constraint firstItem="g7s-Bn-a0I" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TXH-0P-DdG"/>
+                            <constraint firstItem="uJK-19-M1k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vp7-t9-j4Q"/>
+                            <constraint firstItem="g7s-Bn-a0I" firstAttribute="width" secondItem="uJK-19-M1k" secondAttribute="width" id="Wvu-qj-55y"/>
+                            <constraint firstItem="eYN-YQ-HWC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b7n-2f-Mg6"/>
+                            <constraint firstItem="eYN-YQ-HWC" firstAttribute="top" secondItem="eFG-Cu-Wq1" secondAttribute="bottom" constant="30" id="fuP-QR-Pkv"/>
+                            <constraint firstItem="eFG-Cu-Wq1" firstAttribute="width" secondItem="uJK-19-M1k" secondAttribute="width" id="nRz-vC-JqQ"/>
+                            <constraint firstItem="uJK-19-M1k" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.33" id="wRG-5T-PiN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="frontCleanFaceButton" destination="g7s-Bn-a0I" id="eUa-NV-nEF"/>
+                        <outlet property="frontCleanFaceImageView" destination="uJK-19-M1k" id="MKN-I1-NJa"/>
+                        <outlet property="fullBodyNaturePostButton" destination="eYN-YQ-HWC" id="1bZ-7Q-yBn"/>
+                        <outlet property="fullBodyNaturePostImageView" destination="eFG-Cu-Wq1" id="qXd-Ew-dml"/>
+                        <outlet property="loadingActivity" destination="Dyo-hO-wqk" id="Apd-Jo-CaO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
